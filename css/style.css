@@ -24,6 +24,7 @@ nav{
     left: 0;
 
     width: 100%;
+    z-index: 1;
 }
 
 /* nav content */
@@ -58,4 +59,119 @@ nav #logo img{
 
 nav #icons img{
     width: 12px;
+}
+
+
+/* main */
+
+main{
+    padding: 100px 0;
+}
+
+main #main-inner{
+    max-height: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+main #main-inner > div{
+    width: 33%;
+    height: 550px;
+}
+
+/* main images */
+main #main-inner .images{
+    width: 100%;
+
+    position: relative;
+}
+
+main #main-inner .images img{
+    width: 100%;
+}
+
+main #main-inner .images .second-image{
+    position: absolute;
+    top:0;
+    left: 0;
+
+    display: none;
+}
+
+main #main-inner .images:hover .second-image{
+    display: inline-block;
+}
+
+
+/* main captions */
+main #main-inner .caption span{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main #main-inner .caption .brand{
+    font-size: 0.7em;
+}
+
+main #main-inner .caption .item-name{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+main #main-inner .caption .value {
+    display: flex;
+    gap: 5px;
+
+}
+main #main-inner .caption .discount{
+    color: red;
+    font-weight: bold;
+    font-size: 0.8em;
+
+}
+
+main #main-inner .caption .price{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 0.8em;
+    display: inline-block;
+}
+
+main #main-inner .tags{
+    position: absolute;
+    bottom: 25px;
+
+    display: flex;
+    gap: 5px;
+    
+}
+
+main #main-inner .tags .discount-tag{
+    background-color: red;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+main #main-inner .tags .sostenibility-tag{
+    background-color: green;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+main #main-inner .like{
+    position: absolute;
+
+    top: 15px;
+    right: 0;
+
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 1.5em;
 }
