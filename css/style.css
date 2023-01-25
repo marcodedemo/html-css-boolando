@@ -61,6 +61,9 @@ nav #icons img{
     width: 12px;
 }
 
+nav #icons img:hover{
+    cursor: pointer;
+}
 
 /* main */
 
@@ -174,4 +177,62 @@ main #main-inner .like{
     background-color: #ffffff;
     padding: 10px;
     font-size: 1.5em;
+}
+
+/* footer */
+
+footer{
+    background-color: #1a1a1a;
+    color: white;
+}
+
+footer #footer-inner{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 0;
+}
+
+/* links */
+footer #footer-links{
+    display: flex;
+    gap: 8px;
+
+    padding: 10px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.7em;
+}
+
+footer a:hover{
+    text-decoration: underline;
+
+}
+
+footer #social{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer #social #find-us{
+    font-size: 0.6em;
+}
+
+footer #social #footer-icons{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+
+    width: 100px;
+}
+
+footer #social #footer-icons img{
+    max-width: 15px;
+}
+
+footer #social #footer-icons img:hover{
+    cursor: pointer;
 }
